@@ -1,0 +1,52 @@
+/* Reset */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*:root {
+
+}*/
+
+.app {
+  min-height: 500vh;
+  padding: 37px 70px;
+
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* General */
+em {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+
+  border: none;
+
+  background-color: transparent;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="checkbox"] {
+
+  width: 23px;
+  height: 23px;
+
+  accent-color: white;
+}
+
+

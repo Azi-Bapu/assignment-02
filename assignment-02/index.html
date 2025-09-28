@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Epemu Emmanuel">
+    <meta name="description" content="Second Semester - Month 3 - Assignment 2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="./app.js"></script>
+    <title>BEJAMAS_</title>
+  </head>
+  <body class="app">
+    <header class="header">
+      <em class="logo">BEJAMAS_</em>
+      <button class="cart">
+        <svg class="cart__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+      </button>
+      <div class="cart__extend"></div>
+    </header>
+    <main class="main">
+      <section class="product__preview">
+        <header class="preview__header">
+          <h1 id="photo-title" class="photo__title">Samurai King Resting</h1>
+          <button id="add-to-cart-btn" class="add-to-cart__btn">ADD TO CART</button>
+        </header>
+        <section  class="preview__content">
+          <figure class="photo__wrapper" aria-labelledby="photo-title">
+            <img class="preview__img" src="./assets/images/d5780646bea3c9f2aa2b94f1724c9124e6c9956e.jpg" alt="Samurai King Resting">
+            <aside class="preview__aside">Photo of the day</aside>
+          </figure>
+          <section class="about__section">
+            <section class="about">
+              <h2 class="about__title">About the Samurai King Resting</h2>
+              <h3 class="category__text">Pets</h3>
+              <p class="about__text">
+                So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock.
+              </p>
+            </section>
+            <aside class="extra">
+              <!-- Add extra effect when hovering, it expands up for more details -->
+              <h2 class="extra-products__text">People also buy</h2>
+              <section class="extra-products__preview">
+                <a class="extra-product__wrapper" href="">
+                  <img class="extra-product__img" src="./assets/images/1fe1951955ca15c8654e7c844e63c87602c6398a.jpg" alt="">
+                </a>
+                <a class="extra-product__wrapper" href="">
+                  <img class="extra-product__img" src="./assets/images/290eabbe1dbdf80f154ea4305f0d967d21a15c73.jpg" alt="">
+                </a>
+                <a class="extra-product__wrapper" href="">
+                  <img class="extra-product__img" src="./assets/images/181073208d67e79fbec0263b9ca56f0c69f4f64c.jpg" alt="">
+                </a>
+              </section>
+              <h2 class="details__text">Details</h2>
+              <p class="product__dimension">Size: 1020 x 1020 pixel</p>
+              <p class="product__size">Size: 15 mb</p>
+            </aside>
+          </section>
+        </section>
+      </section>
+      <section class="product__catalog">
+        <header class="catalog__header">
+          <section class="left-header">
+            <span class="photography">Photography</span>
+            <span class="divider">/</span>
+            <span class="premium-photo">Premium Photos</span>
+          </section>
+          <section class="right-header">
+            <section class="sort__signs">
+              <svg class="up-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
+              </svg>
+              <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3" />
+              </svg>
+            </section>
+            <section class="sort__text">Sort By</section>
+            <select id="sort-options" class="sort__options">
+              <option class="sort__option" value="price">Price</option>
+              <option class="sort__option" value="date">Date</option>
+              <option class="sort__option" value="size">Size</option>
+            </select>
+          </section>
+        </header>
+        <section class="catalog__main">
+          <section class="catalog__filter">
+            <form class="filter">
+              <fieldset class="filter-type">
+                <legend class="type__title">Category</legend>
+                <section class="input__row">
+                  <input id="people" type="checkbox" name="people">
+                  <label for="people">People</label>
+                </section>
+                <section class="input__row">
+                  <input id="premium" type="checkbox" name="premium">
+                  <label for="premium">Premium</label>
+                </section>
+                <section class="input__row">
+                  <input id="pets" type="checkbox" name="pets">
+                  <label for="pets">Pets</label>
+                </section>
+                <section class="input__row">
+                  <input id="food" type="checkbox" name="food">
+                  <label for="food">Food</label>
+                </section>
+                <section class="input__row">
+                  <input id="landmarks" type="checkbox" name="landmarks">
+                  <label for="landmarks">Landmarks</label>
+                </section>
+                <section class="input__row">
+                  <input id="cities" type="checkbox" name="cities">
+                  <label for="cities">Cities</label>
+                </section>
+                <section class="input__row">
+                  <input id="nature" type="checkbox" name="nature">
+                  <label for="nature">Nature</label>
+                </section>
+              </fieldset>
+              <fieldset class="filter-type">
+                <legend class="type__title">Price range</legend>
+                <section class="input__row">
+                  <input id="$20" type="checkbox" name="$20">
+                  <label for="$20">Lower than $20</label>
+                </section>
+                <section class="input__row">
+                  <input id="$100" type="checkbox" name="$100">
+                  <label for="$100">$20 - $100</label>
+                </section>
+                <section class="input__row">
+                  <input id="$200" type="checkbox" name="$200">
+                  <label for="$200">$100 - $200</label>
+                </section>
+                <section class="input__row">
+                  <input id="infinite" type="checkbox" name="infinite">
+                  <label for="infinite">More than $200</label>
+                </section>
+              </fieldset>
+            </form>
+          </section>
+          <section class="catalog__previews">
+            <section class="item__preview">
+              <figure class="image__wrapper">
+                <img class="preview__img" src="./assets/images/2e67fa6413284b98f11a3a99b332e1a5e5f7ac6a.jpg" alt="Red Bench">
+                <figcaption hidden>Red Bench</figcaption>
+              </figure>
+              <button class="add-to-cart__btn cat-prev">ADD TO CART</button>
+              <section class="product__info">
+                <p class="product__cat">People</p>
+                <p class="product__name">Red Bench</p>
+                <p class="product__cost">$3.89</p>
+              </section>
+            </section>
+            <section class="item__preview">
+              <figure class="image__wrapper">
+                <img class="preview__img" src="./assets/images/181073208d67e79fbec0263b9ca56f0c69f4f64c.jpg" alt="Egg Balloon">
+                <figcaption hidden>Egg Balloon</figcaption>
+              </figure>
+              <button class="add-to-cart__btn cat-prev">ADD TO CART</button>
+              <section class="product__info">
+                <p class="product__cat">Food</p>
+                <p class="product__name">Egg Balloon</p>
+                <p class="product__cost">$93.89 </p>
+              </section>
+            </section>
+            <section class="item__preview">
+              <figure class="image__wrapper">
+                <img class="preview__img" src="./assets/images/181073208d67e79fbec0263b9ca56f0c69f4f64c.jpg" alt="Egg Balloon">
+                <figcaption hidden>Egg Balloon</figcaption>
+              </figure>
+              <button class="add-to-cart__btn cat-prev">ADD TO CART</button>
+              <section class="product__info">
+                <p class="product__cat">Food</p>
+                <p class="product__name">Egg Balloon</p>
+                <p class="product__cost">$93.89 </p>
+              </section>
+            </section>
+            <section class="item__preview">
+              <figure class="image__wrapper">
+                <img class="preview__img" src="./assets/images/3acb6992b2b44d389b4ecc48df0f4d13bfc64742.png" alt="">
+                <figcaption hidden>Red Bench</figcaption>
+              </figure>
+              <button class="add-to-cart__btn cat-prev">ADD TO CART</button>
+              <section class="product__info">
+                <p class="product__cat">People</p>
+                <p class="product__name">Red Bench</p>
+                <p class="product__cost">$3.89</p>
+              </section>
+            </section>
+            <section class="item__preview">
+              <figure class="image__wrapper">
+                <img class="preview__img" src="./assets/images/53e64f83ee1f8af93a676bd5a433158ab808cc93.jpg" alt="">
+                <figcaption hidden>Red Bench</figcaption>
+              </figure>
+              <button class="add-to-cart__btn cat-prev">ADD TO CART</button>
+              <section class="product__info">
+                <p class="product__cat">People</p>
+                <p class="product__name">Red Bench</p>
+                <p class="product__cost">$3.89</p>
+              </section>
+            </section>
+            <section class="item__preview">
+              <figure class="image__wrapper">
+                <img class="preview__img" src="./assets/images/53e64f83ee1f8af93a676bd5a433158ab808cc93.jpg" alt="">
+                <figcaption hidden>Red Bench</figcaption>
+              </figure>
+              <button class="add-to-cart__btn cat-prev">ADD TO CART</button>
+              <section class="product__info">
+                <p class="product__cat">People</p>
+                <p class="product__name">Red Bench</p>
+                <p class="product__cost">$3.89</p>
+              </section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html> 
